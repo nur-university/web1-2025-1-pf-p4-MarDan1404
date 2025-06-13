@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketHub - Mensajes</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/chats.css">
+
+    <style>
+
+
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">MarketHub</a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#" class="header__nav-link">Productos</a></li>
+                    <li><a href="#" class="header__nav-link">Mis Productos</a></li>
+                    <li><a href="#" class="header__nav-link">Favoritos</a></li>
+                    <li><a href="#" class="header__nav-link header__nav-link--active">Mensajes</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__user">
+                <div class="header__notifications">
+                    💬
+                    <div class="header__notification-badge" id="notificationBadge">3</div>
+                </div>
+                <div class="header__avatar" id="userAvatar">MU</div>
+
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-dropdown__header">
+                        <div class="user-dropdown__name">Marco Urey</div>
+                        <div class="user-dropdown__email">marco.urey@email.com</div>
+                    </div>
+                    <div class="user-dropdown__menu">
+                        <a href="#" class="user-dropdown__item">
+                            <span>👤</span>
+                            Mi Perfil
+                        </a>
+                        <a href="#" class="user-dropdown__item">
+                            <span>⚙️</span>
+                            Configuración
+                        </a>
+                        <div class="user-dropdown__item user-dropdown__item--logout" id="logoutBtn">
+                            Cerrar Sesión
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <ul class="mobile-menu__nav-list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Productos</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Mis Productos</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Favoritos</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link mobile-menu__nav-link--active">Mensajes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="messages">
+            <div class="messages__header">
+                <h1 class="messages__title">Mensajes</h1>
+                <p class="messages__subtitle">Gestiona tus conversaciones de compra y venta</p>
+            </div>
+
+            <div class="message-tabs">
+                <button class="message-tabs__tab message-tabs__tab--active" id="buyingTab">
+                    Comprando
+                    <span class="message-tabs__badge" id="buyingBadge">3</span>
+                </button>
+                <button class="message-tabs__tab" id="sellingTab">
+                    Vendiendo
+                    <span class="message-tabs__badge" id="sellingBadge">3</span>
+                </button>
+            </div>
+
+            <div class="messages__container">
+                <div class="messages__search">
+                    <div class="search-input">
+                        <input type="text" class="search-input__field" placeholder="Buscar conversaciones..."
+                            id="searchInput">
+                    </div>
+                </div>
+
+                <div class="conversation-list" id="conversationList">
+                    <div class="conversation-item conversation-item--unread" data-type="buying" data-id="1" onclick="window.location.href='chat-detail.html'">
+                        <div class="conversation__avatar conversation__avatar--buying">JC<div
+                                class="conversation__status"></div>
+                        </div>
+                        <div class="conversation__content">
+                            <div class="conversation__header">
+                                <div class="conversation__name">Jose Carlos</div>
+                                <div class="conversation__time">Hoy, 11:10</div>
+                            </div>
+                            <div class="conversation__product">Pelota de Fútbol Profesional - $120</div>
+                            <div class="conversation__last-message conversation__last-message--unread">
+                                ¿La entrega sería en Guadalajara?
+                            </div>
+                        </div>
+                        <div class="conversation__unread-badge">1</div>
+                    </div>
+
+                    <div class="conversation-item" data-type="buying" data-id="2" onclick="window.location.href='chat-detail.html'">
+                        <div class="conversation__avatar conversation__avatar--buying">MG</div>
+                        <div class="conversation__content">
+                            <div class="conversation__header">
+                                <div class="conversation__name">Jose Carlos</div>
+                                <div class="conversation__time">Ayer</div>
+                            </div>
+                            <div class="conversation__product">Reloj de Bolsillo Mecánico - $90</div>
+                            <div class="conversation__last-message">
+                                ¿Aún disponible? Me interesa mucho.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item" data-type="buying" data-id="2" onclick="window.location.href='chat-detail.html'">
+                        <div class="conversation__avatar conversation__avatar--buying">MG</div>
+                        <div class="conversation__content">
+                            <div class="conversation__header">
+                                <div class="conversation__name">María García</div>
+                                <div class="conversation__time">Ayer</div>
+                            </div>
+                            <div class="conversation__product">Reloj de Bolsillo Mecánico - $90</div>
+                            <div class="conversation__last-message">
+                                ¿Aún disponible? Me interesa mucho.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item" data-type="buying" data-id="3" onclick="window.location.href='chat-detail.html'">
+                        <div class="conversation__avatar conversation__avatar--buying">LF</div>
+                        <div class="conversation__content">
+                            <div class="conversation__header">
+                                <div class="conversation__name">Luis Mendoza</div>
+                                <div class="conversation__time">Lun</div>
+                            </div>
+                            <div class="conversation__product">Colección de Sellos Antiguos - $150</div>
+                            <div class="conversation__last-message">
+                                ¿Incluye los sellos mostrados en la foto?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item conversation-item--unread" data-type="selling" data-id="4"
+                        style="display: none;" onclick="window.location.href='chat-detail.html'">
+                        <div class="conversation__avatar conversation__avatar--selling">AF<div
+                                class="conversation__status"></div>
+                        </div>
+                        <div class="conversation__content">
+                            <div class="conversation__header">
+                                <div class="conversation__name">Ana Flores</div>
+                                <div class="conversation__time">Hoy, 10:45</div>
+                            </div>
+                            <div class="conversation__product">Mueble para Bonsáis Artesanal - $110</div>
+                            <div class="conversation__last-message conversation__last-message--unread">
+                                ¿Puedes enviarme más fotos?
+                            </div>
+                        </div>
+                        <div class="conversation__unread-badge">1</div>
+                    </div>
+
+                    <div class="conversation-item" data-type="selling" data-id="5" style="display: none;" onclick="window.location.href='chat-detail.html'">
+                        <div class="conversation__avatar conversation__avatar--selling">RS</div>
+                        <div class="conversation__content">
+                            <div class="conversation__header">
+                                <div class="conversation__name">Roberto Silva</div>
+                                <div class="conversation__time">Hace 2 días</div>
+                            </div>
+                            <div class="conversation__product">Colección de Cintas VHS Originales - $65</div>
+                            <div class="conversation__last-message">
+                                ¿Aún las tienes disponibles?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item" data-type="selling" data-id="6" style="display: none;" onclick="window.location.href='chat-detail.html'">
+                        <div class="conversation__avatar conversation__avatar--selling">MG</div>
+                        <div class="conversation__content">
+                            <div class="conversation__header">
+                                <div class="conversation__name">María García</div>
+                                <div class="conversation__time">Hace 5 días</div>
+                            </div>
+                            <div class="conversation__product">Pelota de Fútbol Profesional - $120</div>
+                            <div class="conversation__last-message">
+                                ¿A qué hora puedo recogerla?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="toast" id="toast">
+        <span id="toastIcon">✅</span>
+        <span id="toastMessage">Operación exitosa</span>
+    </div>
+
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/chats.js"></script>
+
+</html>

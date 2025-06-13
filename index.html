@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketHub - Encuentra exactamente lo que necesitas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/landingPage.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">MarketHub</a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#" class="header__nav-link">Inicio</a></li>
+                    <li><a href="#categories" class="header__nav-link">Categorías</a></li>
+                    <li><a href="pages/ad-list.html" class="header__nav-link">Anuncios</a></li>
+                    <li><a href="#" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__auth">
+                <a href="pages/login.html" class="header__auth-link header__auth-link--login">Iniciar Sesión</a>
+                <a href="#" class="header__auth-link header__auth-link--register">Registrarse</a>
+            </div>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <ul class="mobile-menu__nav-list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Inicio</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#categories" class="mobile-menu__nav-link">Categorías</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="pages/ad-list.html" class="mobile-menu__nav-link">Anuncios</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu__auth">
+                    <a href="pages/login.html" class="mobile-menu__auth-link mobile-menu__auth-link--login">Iniciar
+                        Sesión</a>
+                    <a href="#" class="mobile-menu__auth-link mobile-menu__auth-link--register">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Encuentra exactamente lo que necesitas</h1>
+            <p class="hero__subtitle">
+                Descubre miles de productos únicos en nuestra plataforma de anuncios clasificados
+            </p>
+
+            <div class="hero__search">
+                <input type="text" class="hero__search-input" placeholder="Buscar productos...">
+                <button class="hero__search-button">Buscar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="categories__container">
+            <h2 class="categories__title">Categorías Populares</h2>
+
+            <div class="categories__grid">
+                <div class="category-card">
+                    <h3 class="category-card__name">Vehículos</h3>
+                    <p class="category-card__count">2,453 anuncios</p>
+                </div>
+
+                <div class="category-card">
+                    <h3 class="category-card__name">Electrónicos</h3>
+                    <p class="category-card__count">1,832 anuncios</p>
+                </div>
+
+                <div class="category-card">
+                    <h3 class="category-card__name">Inmuebles</h3>
+                    <p class="category-card__count">945 anuncios</p>
+                </div>
+
+                <div class="category-card">
+                    <h3 class="category-card__name">Empleos</h3>
+                    <p class="category-card__count">756 anuncios</p>
+                </div>
+
+                <div class="category-card">
+                    <h3 class="category-card__name">Muebles</h3>
+                    <p class="category-card__count">1,234 anuncios</p>
+                </div>
+
+                <div class="category-card">
+                    <h3 class="category-card__name">Moda</h3>
+                    <p class="category-card__count">2,156 anuncios</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="ads">
+        <div class="featured__container">
+            <h2 class="featured__title">Anuncios Destacados</h2>
+
+            <div class="featured__grid">
+                <div class="ad-card" onclick="window.location.href='pages/ad-detail.html'">
+                    <img class="ad-card__image" src="images/coleccion.jpg"></img>
+                    <div class="ad-card__content">
+                        <h3 class="ad-card__title">Colección de Sellos Antiguos</h3>
+                        <p class="ad-card__price">$150</p>
+                        <p class="ad-card__location">📍 Sucre</p>
+                    </div>
+                </div>
+
+                <div class="ad-card" onclick="window.location.href='pages/ad-detail.html'">
+                    <img class="ad-card__image" src="images/reloj.jpeg"></img>
+                    <div class="ad-card__content">
+                        <h3 class="ad-card__title">Reloj de Bolsillo Mecánico</h3>
+                        <p class="ad-card__price">$90</p>
+                        <p class="ad-card__location">📍 Tarija</p>
+                    </div>
+                </div>
+
+                <div class="ad-card" onclick="window.location.href='pages/ad-detail.html'">
+                    <img class="ad-card__image" src="images/bonsai.jpg"></img>
+                    <div class="ad-card__content">
+                        <h3 class="ad-card__title">Mueble para Bonsáis Artesanal</h3>
+                        <p class="ad-card__price">$110</p>
+                        <p class="ad-card__location">📍 Cochabamba</p>
+                    </div>
+                </div>
+
+                <div class="ad-card" onclick="window.location.href='pages/ad-detail.html'">
+                    <img class="ad-card__image" src="images/cinta.jpeg"></img>
+                    <div class="ad-card__content">
+                        <h3 class="ad-card__title">Colección de Cintas VHS Originales</h3>
+                        <p class="ad-card__price">$65</p>
+                        <p class="ad-card__location">📍 La Paz</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq__container">
+            <h2 class="faq__title">Preguntas Frecuentes</h2>
+
+            <div class="faq__item">
+                <div class="faq__question">
+                    ¿Cómo publico un anuncio?
+                    <span>+</span>
+                </div>
+                <div class="faq__answer">
+                    Simplemente haz clic en el botón "Publicar Anuncio" y sigue las instrucciones para crear tu anuncio.
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <div class="faq__question">
+                    ¿Es gratis publicar anuncios?
+                    <span>+</span>
+                </div>
+                <div class="faq__answer">
+                    Sí, publicar anuncios básicos es completamente gratuito en nuestra plataforma.
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <div class="faq__question">
+                    ¿Cómo contacto con un vendedor?
+                    <span>+</span>
+                </div>
+                <div class="faq__answer">
+                    Puedes enviar un mensaje directo al vendedor a través de nuestro sistema de mensajería interno.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">MarketHub</div>
+            <p class="footer__text">
+                © 2025 MarketHub. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+<script src="js/header.js"></script>
+<script src="js/card.js"></script>
+<script src="js/faq__question.js"></script>
+
+</html>

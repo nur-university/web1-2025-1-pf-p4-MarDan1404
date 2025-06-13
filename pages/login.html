@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketHub - Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">MarketHub</a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="../index.html#categories" class="header__nav-link">Categorías</a></li>
+                    <li><a href="ad-list.html" class="header__nav-link">Anuncios</a></li>
+                    <li><a href="#" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__auth">
+                <a href="#" class="header__auth-link header__auth-link--login">Iniciar Sesión</a>
+                <a href="#" class="header__auth-link header__auth-link--register">Registrarse</a>
+            </div>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <ul class="mobile-menu__nav-list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="../index.html" class="mobile-menu__nav-link">Inicio</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="../index.html#categories" class="mobile-menu__nav-link">Categorías</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="ad-list.html" class="mobile-menu__nav-link">Anuncios</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu__auth">
+                    <a href="#" class="mobile-menu__auth-link mobile-menu__auth-link--login">Iniciar Sesión</a>
+                    <a href="#" class="mobile-menu__auth-link mobile-menu__auth-link--register">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="login__container">
+            <div class="login__card">
+                <div class="login__header">
+                    <h1 class="login__title">Bienvenido</h1>
+                    <p class="login__subtitle">Ingresa a tu cuenta para continuar</p>
+                </div>
+
+                <form class="login__form" id="loginForm">
+                    <div class="form-group">
+                        <label for="email" class="form-group__label">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="form-group__input" placeholder="tu@email.com">
+                        <div class="form-group__error" id="emailError">
+                            Por favor, ingresa un correo electrónico válido
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-group__label">Contraseña</label>
+                        <input type="password" id="password" name="password" class="form-group__input"
+                            placeholder="Tu contraseña" minlength="6">
+                        <div class="form-group__error" id="passwordError">
+                            La contraseña debe tener al menos 6 caracteres
+                        </div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember" name="remember" class="checkbox-group__input">
+                        <label for="remember" class="checkbox-group__label">
+                            Recordar sesión
+                        </label>
+                    </div>
+
+                    <button type="submit" class="login__submit" id="submitButton">
+                        Iniciar Sesión
+                    </button>
+                </form>
+
+                <div class="login__footer">
+                    <div class="login__divider">o</div>
+
+                    <p class="login__footer-text">
+                        ¿No tienes cuenta?
+                        <a href="#" class="login__footer-link">Regístrate aquí</a>
+                    </p>
+
+                    <p class="login__footer-text">
+                        <a href="#" class="login__footer-link">¿Olvidaste tu contraseña?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/login.js"></script>
+
+</html>
