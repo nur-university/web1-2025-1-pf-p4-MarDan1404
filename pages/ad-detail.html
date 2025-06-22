@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelotita - MarketHub</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/ad-detail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">MarketHub</a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="../index.html#categories" class="header__nav-link">Categorías</a></li>
+                    <li><a href="ad-list.html" class="header__nav-link">Anuncios</a></li>
+                    <li><a href="#" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__auth">
+                <a href="login.html" class="header__auth-link header__auth-link--login">Iniciar Sesión</a>
+                <a href="#" class="header__auth-link header__auth-link--register">Registrarse</a>
+            </div>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <ul class="mobile-menu__nav-list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="../index.html" class="mobile-menu__nav-link">Inicio</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="../index.html#categories" class="mobile-menu__nav-link">Categorías</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="ad-list.html" class="mobile-menu__nav-link">Anuncios</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__auth">
+                    <a href="#" class="mobile-menu__auth-link mobile-menu__auth-link--login">Iniciar Sesión</a>
+                    <a href="#" class="mobile-menu__auth-link mobile-menu__auth-link--register">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <nav class="breadcrumb">
+            <div class="breadcrumb__container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Inicio</a>
+                    </li>
+                    <li class="breadcrumb__separator">›</li>
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Deportes</a>
+                    </li>
+                    <li class="breadcrumb__separator">›</li>
+                    <li class="breadcrumb__item">Pelota de Fútbol Profesional</li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="ad-detail">
+            <div class="ad-detail__container">
+                <div class="ad-detail__grid">
+                    <div>
+                        <div class="image-gallery">
+                            <img class="image-gallery__main" id="mainImage" src="../images/pelotita.jpg" alt="Pelota de Fútbol Profesional">
+                        </img>
+                            <div class="image-gallery__thumbnails">
+                                <img class="image-gallery__thumbnail image-gallery__thumbnail--active" src="../images/pelotita.jpg"></img>
+                                <img class="image-gallery__thumbnail"></img>
+                                <img class="image-gallery__thumbnail"></img>
+                                <img class="image-gallery__thumbnail"></img>
+                                <img class="image-gallery__thumbnail"></img>
+                            </div>
+                        </div>
+
+                        <div class="ad-info">
+                            <div class="ad-info__header">
+                                <h1 class="ad-info__title">Pelota de Fútbol Profesional</h1>
+                                <div class="ad-info__price">$120</div>
+                                <div class="ad-info__meta">
+                                    <div class="ad-info__meta-item">
+                                        <span>📍</span>
+                                        <span>Guadalajara, JAL</span>
+                                    </div>
+                                    <div class="ad-info__meta-item">
+                                        <span>📅</span>
+                                        <span>Publicado hace 4 horas</span>
+                                    </div>
+                                    <div class="ad-info__meta-item">
+                                        <span>👁️</span>
+                                        <span>89 vistas</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ad-info__description">
+                                <h2 class="ad-info__description-title">Descripción</h2>
+                                <p class="ad-info__description-text">
+                                    Pelota de fútbol profesional usada solo en torneos regionales. Marca: Voit. Tamaño
+                                    oficial. Incluye válvula reforzada y costuras a mano. Ideal para coleccionistas o
+                                    jugadores serios. Se entrega inflada y lista para jugar. Estado: 9/10.
+                                </p>
+                            </div>
+
+                            <div class="ad-info__specs">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="seller-info">
+                            <div class="seller-info__header">
+                                <div class="seller-info__avatar">JC</div>
+                                <div class="seller-info__details">
+                                    <h3>Jose Carlos Gutierrez</h3>
+                                </div>
+                            </div>
+
+                            <div class="seller-info__actions">
+                                <button class="btn btn--primary" id="sendMessageBtn" onclick="window.location.href='chat-detail.html'">
+                                    <span>💬</span>
+                                    Enviar Mensaje
+                                </button>
+                                <button class="btn btn--secondary" id="saveAdBtn">
+                                    <span>❤️</span>
+                                    Guardar Anuncio
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="similar-ads">
+                            <h3 class="similar-ads__title">Anuncios Similares</h3>
+                            <div class="similar-ads__grid">
+                                <div class="similar-ad" onclick="window.location.href='ad-detail.html'">
+                                    <div class="similar-ad__content">
+                                        <div class="similar-ad__image">Img</div>
+                                        <div class="similar-ad__info">
+                                            <h4>Raqueta de Bádminton de Grafeno</h4>
+                                            <div class="similar-ad__price">$85</div>
+                                            <div class="similar-ad__location">📍 León, GTO</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="similar-ad" onclick="window.location.href='ad-detail.html'">
+                                    <div class="similar-ad__content">
+                                        <div class="similar-ad__image">Img</div>
+                                        <div class="similar-ad__info">
+                                            <h4>Zapatos para Escalada Volcánica</h4>
+                                            <div class="similar-ad__price">$210</div>
+                                            <div class="similar-ad__location">📍 Puebla, PUE</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="similar-ad" onclick="window.location.href='ad-detail.html'">
+                                    <div class="similar-ad__content">
+                                        <div class="similar-ad__image">Img</div>
+                                        <div class="similar-ad__info">
+                                            <h4>Kit de Tiro con Arco Tradicional</h4>
+                                            <div class="similar-ad__price">$340</div>
+                                            <div class="similar-ad__location">📍 Mérida, YUC</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="messageModal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title">Enviar Mensaje a Jose Carlos Gutierrez</h3>
+                <button class="modal__close" id="closeModal">×</button>
+            </div>
+            <form class="modal__form" id="messageForm">
+                <textarea class="modal__textarea" id="messageText"
+                    placeholder="Escribe tu mensaje aquí... Ejemplo: Hola, estoy interesado en la pelota de fútbol. ¿Sigue disponible? ¿Podrías decirme si se usó en competiciones oficiales?"
+                    required minlength="10"></textarea>
+                <button type="submit" class="btn btn--primary">
+                    <span>📤</span>
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="toast" id="successToast" style="
+        position: fixed;
+        top: 6rem;
+        right: 1rem;
+        background: var(--color-success);
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-card);
+        z-index: 3000;
+        transform: translateX(400px);
+        transition: var(--transition);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    ">
+        <span>✅</span>
+        <span id="toastMessage">Operación exitosa</span>
+    </div>
+
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/ad-detail.js"></script>
+
+</html>

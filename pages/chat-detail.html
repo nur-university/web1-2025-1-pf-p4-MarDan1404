@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Jose Carlos - MarketHub</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/chat-detail.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="chats.html" class="header__back" id="backButton">
+                    <span>←</span>
+                    <span>Volver</span>
+                </a>
+                <a href="../index.html" class="header__logo">MarketHub</a>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#" class="header__nav-link">Productos</a></li>
+                    <li><a href="#" class="header__nav-link">Mis Productos</a></li>
+                    <li><a href="#" class="header__nav-link">Favoritos</a></li>
+                    <li><a href="chats.html" class="header__nav-link header__nav-link--active">Mensajes</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__user">
+                <div class="header__notifications" onclick="window.location.href='chats.html'">
+                    💬
+                    <div class="header__notification-badge" id="notificationBadge">3</div>
+                </div>
+                <div class="header__avatar" id="userAvatar">JC</div>
+
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-dropdown__header">
+                        <div class="user-dropdown__name">Jose Carlos</div>
+                        <div class="user-dropdown__email">jose.carlos@email.com</div>
+                    </div>
+                    <div class="user-dropdown__menu">
+                        <a href="#" class="user-dropdown__item">
+                            <span>👤</span>
+                            Mi Perfil
+                        </a>
+                        <a href="#" class="user-dropdown__item">
+                            <span>⚙️</span>
+                            Configuración
+                        </a>
+                        <div class="user-dropdown__item user-dropdown__item--logout" id="logoutBtn">
+                            <span>🚪</span>
+                            Cerrar Sesión
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <ul class="mobile-menu__nav-list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Productos</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Mis Productos</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link">Favoritos</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__nav-link mobile-menu__nav-link--active">Mensajes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="chat">
+            <div class="chat__container">
+                <div class="chat__messages" id="messagesContainer">
+                    <div class="chat__info">
+                        <div class="chat__user-header">
+                            <div class="chat__avatar">
+                                JC
+                                <div class="chat__status-indicator"></div>
+                            </div>
+                            <div class="chat__user-info">
+                                <h3>Jose Carlos</h3>
+                                <div class="chat__status">
+                                    <div class="chat__online-dot"></div>
+                                    En línea • Responde usualmente en 1 hora
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card product-card--chat">
+                            <div class="product-card__content">
+                                <img class="product-card__image" src="../images/pelotita.jpg" alt="Pelota de fútbol Adidas"></img>
+                                <div class="product-card__info">
+                                    <h3 class="product-card__title">Pelota de fútbol Adidas</h3>
+                                    <div class="product-card__price">$30</div>
+                                </div>
+                                <div class="product-card__actions">
+                                    <a href="#" class="btn btn--primary">Ver Detalle</a>
+                                    <button class="btn btn--secondary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="messages-list" id="messagesList">
+                        <div class="date-separator">
+                            <div class="date-separator__text">Hoy</div>
+                        </div>
+
+                        <div class="message message--received">
+                            <div class="message__avatar">JC</div>
+                            <div class="message__content">
+                                <div class="message__text">Hola, vi que te interesaste por la pelota de fútbol. ¿En qué puedo ayudarte?</div>
+                                <div class="message__time">9:30 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message message--sent">
+                            <div class="message__avatar">TU</div>
+                            <div class="message__content">
+                                <div class="message__text">Hola! Sí, me interesa. ¿Está nueva o ha sido usada?</div>
+                                <div class="message__time">9:35 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message message--received">
+                            <div class="message__avatar">JC</div>
+                            <div class="message__content">
+                                <div class="message__text">Está completamente nueva, sin uso. La compré para un torneo que fue cancelado.</div>
+                                <div class="message__time">9:37 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message message--sent">
+                            <div class="message__avatar">TU</div>
+                            <div class="message__content">
+                                <div class="message__text">Perfecto! ¿Podría pasar a recogerla el sábado por la tarde?</div>
+                                <div class="message__time">10:15 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message message--received">
+                            <div class="message__avatar">JC</div>
+                            <div class="message__content">
+                                <div class="message__text">Sí, sin problema. Te paso la dirección por privado más tarde.</div>
+                                <div class="message__time">10:30 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                            <div class="typing-indicator__avatar">JC</div>
+                            <div class="typing-indicator__content">
+                                <div class="typing-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__input">
+                    <form class="chat__input-form" id="messageForm">
+                        <textarea class="chat__input-field" placeholder="Escribe tu mensaje..." rows="1" id="messageInput"></textarea>
+                        <button type="submit" class="chat__send-button" id="sendButton">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="../js/chat-detail.js"></script>
+<script src="../js/header.js"></script>
+
+</html>
